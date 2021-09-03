@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bill</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<link href="{% static '/img/favicon.png' %}" rel="icon">
+  	<link href="{% static '/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+	
+<style type="text/css">
+	h2{
+		
+		font-style: cursive;
+		color: #004848;
+	}
+	body{
+		/* background-color: #c3c3c3; */
+		background: #B7DEED;
+		background: -webkit-linear-gradient(to right, #B7DEED 0%, #71CEEF 25%, #21B4E2 75%, #B7DEED 100%);
+		background: -moz-linear-gradient(to right, #B7DEED 0%, #71CEEF 25%, #21B4E2 75%, #B7DEED 100%);
+		background: linear-gradient(to right, #B7DEED 0%, #71CEEF 25%, #21B4E2 75%, #B7DEED 100%);
+
+	}
+	th{
+		background-color: #ffbfbf;
+	}
+	tr{
+		background-color: #dfffdf;
+	}
+</style>
+</head>
+
+<body>
+	<div class="container">
+		<a href="{% url 'requests' %}" class="text-white"><i class="fas fa-arrow-left mt-3 fa-x"></i></a>
+		<h2 class="text-center mt-2">Bill</h2>
+		<div class="row col-md-12 mt-3">
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Service cost</th>
+      <th scope="col">Service date</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for i in data2 %}
+    <tr>
+      <td>{{i.acost}}</td>
+      <td>{{i.adate}}</td>
+      <td>{{i.astatus}}</td>
+    </tr>
+    {% endfor %}
+	
+  </tbody>
+</table>
+
+</div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</html>

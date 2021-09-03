@@ -1,0 +1,559 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Mecca Vehicle Service</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static '/img/favicon.png' %}" rel="icon">
+  <link href="{% static '/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static '/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static '/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static '/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Maxim - v4.3.0
+  * Template URL: https://bootstrapmade.com/maxim-free-onepage-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div class="logo">
+        <h1><a href="{% url 'home' %}">MECCA VEHICLE SERVICE</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="{% static '/img/logo.png' %}" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Customer</a></li>
+          <li><a class="nav-link scrollto" href="#team">Admin</a></li>
+          
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+    
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container text-center text-md-left" data-aos="fade-up">
+      <h1>Welcome to MECCA</h1>
+      <h2>Only Advanced Innovative Solutions for Automobile</h2>
+    
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-xl-6 col-lg-7" data-aos="fade-right">
+            <img src="{% static '/img/about.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-xl-6 col-lg-5 pt-5 pt-lg-0">
+            <h3 data-aos="fade-up">MECCA</h3>
+            <p data-aos="fade-up">
+              Automobiles need maintanance from time to time.Like humans are required to maintain hygiene,similarly automobiles also need to kept clean.Therefore,there is need for regular maintanance and servicing of automobiles,which is usually done in auto workshops or auto service stations.</p>
+            <div class="icon-box" data-aos="fade-up">
+              <i class="bx bx-cube-alt"></i>
+              <p>As you may be aware,there is an increase in the number of vehicles,such as motorcycle,scooter,car,jeep,tempo,truck,tanker etc running the cities.</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-cube-alt"></i>
+              <p>Common activities in the workshop are Engine tuneup,oil replacement,checking of battery— electrolyte level and top-up,Clutch and brake-free play and their adjustment, Lighting system, its various parts and
+                their checking,Identification	 of	 greasing	 points	 of	 wheelers	 and procedure of greasing,Checking	of	tyre	inflation	and	procedure	of	inflation etc</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-cube-alt"></i>
+              <p>When a vehicle owner enter this online service centre,we check the details and mechanic or supervisor inspects </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Steps Section ======= -->
+    <section id="steps" class="steps section-bg">
+      <div class="container">
+
+        <div class="row no-gutters">
+      <h3>Daily Inspection</h3>
+
+          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-in">
+            <span>01</span>
+            <h4></h4>
+            <p>Check tyre pressure in all the tyres visually or by
+              hitting the tyre wall with the help of a stone and
+              judge the sound</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-in" data-aos-delay="100">
+            <span>02</span>
+            <h4></h4>
+            <p>Check the radiator’s coolant level</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-in" data-aos-delay="200">
+            <span>03</span>
+            <h4></h4>
+            <p>Check the fan belts for looseness </p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-in" data-aos-delay="300">
+            <span>04</span>
+            <h4></h4>
+            <p>Check the level of engine oil</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-in" data-aos-delay="400">
+            <span>05</span>
+            <h4></h4>
+            <p>Check the windscreen, rear-view mirror and rear-window glass for their cleanliness</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-in" data-aos-delay="500">
+            <span>06</span>
+            <h4></h4>
+            <p>Test parking brake for operation and holding capacity</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Steps Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+
+        <div class="row">
+          <h3>Monthly Inspection</h3>
+          <div class="col-lg-4 mb-5 mb-lg-0 mt-5" data-aos="fade-right">
+          
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
+                  <h4>Headlights</h4>
+                  <p>Turn on your vehicle’s headlights, get out of the vehicle and walk around the vehicle. Test turn signal lights and taillights, too. Replace burned-out bulbs to see clearly at night and reduce your risk of getting pulled over.</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
+                  <h4>Fluid Reservoirs</h4>
+                  <p>Open the hood latch and check the brake fluid, power steering fluid, automatic transmission fluid, windshield wiper fluid, and coolant levels. As long as fluid falls between the minimum and maximum lines, you are safe. If fluid is low, pick up fluid at a local automotive shop and top levels off, or take a quick trip to the mechanic.</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+                  <h4>Check tires</h4>
+                  <p>Check the tire treads and air pressure. Top off air pressure since low tires pose a safety hazard; make note of tire wear and tear in order to budget for new tires.</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
+                  <h4>Clean the vehicle</h4>
+                  <p>Make a habit of dusting the interior, removing garbage from the vehicle and cleaning the windows. This keeps your car’s interior looking great year-round.</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-7 ml-auto" data-aos="fade-left">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <figure>
+                  <img src="{% static '/img/headlight.webp' %}" alt="" class="img-fluid">
+                </figure>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <figure>
+                  <img src="{% static '/img/fluidreservoir.jpeg' %}" alt="" class="img-fluid">
+                </figure>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <figure>
+                  <img src="{% static '/img/tyrepressure.jpg' %}" alt="" class="img-fluid">
+                </figure>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <figure>
+                  <img src="{% static '/img/clean.jpg' %}" alt="" class="img-fluid">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Customer</h2>
+        </div>
+        <div class="text-center pt-5">
+            <h2>Hello Customer!!!</h2>
+            <p>Welcome to vehicle service management system</p>
+        </div><hr>
+        <div class="text-center pt-5">
+        <!-- <button type="button" class="btn btn-info" data-target="{% url 'signup' %}">LOGIN or SIGNUP</button> -->
+      <button type="button" class="btn btn-success btn-lg" > <a href="{% url 'login' %}">LOGIN</a></button>
+      <button type="button" class="btn btn-success btn-lg" > <a href="{% url 'signup' %}">SIGNUP</a></button>
+      
+        </div>
+          
+          
+          
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          
+          
+        </div>
+
+        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                
+                  
+                
+                <img src="{% static '/img/ford.jpg' %}" class="testimonial-img" alt="">
+                
+                
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                
+                <img src="{% static '/img/daewoo.png' %}" class="testimonial-img" alt="">
+                
+                
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                
+                <img src="{% static '/img/toyota.jpg' %}" class="testimonial-img" alt="">
+                
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                
+                <img src="{% static '/img/bajaj.jpg' %}" class="testimonial-img" alt="">
+                
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                
+                <img src="{% static '/img/honda.jpg' %}" class="testimonial-img" alt="">
+                
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+  
+    
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Admin</h2>
+          <h3>Mecca Vehicle Management system</h3>
+        </div>
+        <div class="row">
+        <div class="col-8 align-items-center text-center">
+           <img src="{% static '/img/admin.jpg' %}" class="img-fluid" alt="">
+        </div>
+        <div class="col-4 btn bg-secondary">
+          <button class="btn-danger" type="button"><a href="{% url 'alogin' %}">LOGIN</a></button>
+        </div>
+        </div>
+      
+        </div>
+
+    </section><!-- End Team Section -->
+
+    <!-- ======= F.A.Q Section ======= -->
+    <!-- <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>F.A.Q</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section>End F.A.Q Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p></p>
+        </div>
+
+        <div class="row no-gutters justify-content-center" data-aos="fade-up">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p> National Highway 66 near Calicut University Kakkanchery Chelembra PO, Dt, Thenhipalam, Kerala 673634</p>
+              </div>
+
+              <div class="email mt-4">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>mecca@example.com</p>
+              </div>
+
+              <div class="phone mt-4">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 9589 554 885</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15657.789948935666!2d75.88072292751721!3d11.154466123049696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6503e63169bd3%3A0xd7f7da7e7646a003!2sKakkanchery%2C%20Chelambra%2C%20Kerala!5e0!3m2!1sen!2sin!4v1629037431753!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+        </div>
+
+        <div class="row mt-5 justify-content-center" data-aos="fade-up">
+          <div class="col-lg-10">
+<div class="contact-form">
+            <form action="{% url 'home' %}" method="POST" role="form">{% csrf_token %}
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <!-- <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div> -->
+<center><label for="" style="color: red;">{{ msg }}</label></center>
+              <div class="text-center"><button type="submit" class="main-button">Send Message</button></div>
+            </form>
+          </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Mecca</h3>
+              <p>
+                <br>National Highway 66 near Calicut University Kakkanchery Chelembra PO, Dt, Thenhipalam, Kerala 673634<br>
+                <strong>Phone:</strong> +91 9589 554 885<br>
+                <strong>Email:</strong> mecca@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Engine tuneup</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">checking of battery</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">oil replacement</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Lighting system</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Checking of tyre inflation</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            
+            <p>Only Advanced Innovative Solutions for Automobile</p>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Mecca</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/maxim-free-onepage-bootstrap-theme/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static '/vendor/aos/aos.js' %}"></script>
+  <script src="{% static '/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static '/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static '/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static '/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static '/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static '/js/main.js' %}"></script>
+
+</body>
+
+</html>

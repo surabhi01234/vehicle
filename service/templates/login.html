@@ -1,0 +1,141 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomerLogin</title>
+	<link href="{% static '/img/favicon.png' %}" rel="icon">
+  	<link href="{% static '/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+<style>
+*{
+	margin: 0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family:aharony;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+}
+.c-from{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #1984c8;
+	position: relative;
+	background-image: url(https://i.pinimg.com/originals/fa/38/31/fa3831976bbbcdbefac1a336b91246c1.jpg);
+	background-position: center center;
+	background-size:cover;
+}
+
+
+
+.contact-from{
+	width:500px;
+	padding:50px ;
+	border:5px solid #fff;
+	background-color: #000;
+	z-index: 1;
+
+}
+
+.contact-from h3{
+	color:#fff;
+	font-size: 40px;
+	text-align: center;
+	letter-spacing:2px;
+}
+
+.contact-from p{
+	color:#fff;
+	text-align: center;
+	letter-spacing:2px;
+	margin-top:20px;
+	margin-bottom:40px;
+
+}
+.l-box{
+	position: relative;
+}
+
+.l-box input{
+	width:100%;
+	background-color:transparent;
+	outline: none;
+	color: #fff;
+	padding: 5px 0px;
+	font-size: 17px;
+	border:none;
+	border-bottom:1px solid #fff;
+	margin-bottom: 30px;
+}
+.l-box label{
+	position: absolute;
+	top:5px;
+	left: 0px;
+	font-size:20px;
+	color:#fff;
+	transition: .3s;
+}
+
+.l-box input:focus ~ label{
+    top:-20px;
+    font-size: 16px;
+}
+.l-box input:valid ~ label{
+    top:-20px;
+    font-size: 16px;
+}
+
+.submit{
+	padding:8px 40px;
+	outline: none;
+	border:1px solid #fff;
+	background-color:transparent;
+	color:#fff;
+	font-size: 20px;
+	display: block;
+	margin: auto;
+	transition: .3s;
+}
+
+.submit:hover{
+	background-color: #fff;
+	color: #1984c8;
+	cursor: pointer;
+}
+</style>
+</head>
+<body>
+    <form class="form" action="" method="POST">{% csrf_token %}
+    <div class="c-from">
+      <div class="contact-from">
+      
+        <h3>login</h3>
+        <p>Please enter your username and passsword to enter Mecca vehicle service</p>
+       
+       <div class="l-box">
+         <input type="text" required="" name="cname">
+         <label for="">Username</label>
+  
+       </div>
+       <div class="l-box">
+         <input type="password" required="" name="cpass">
+         <label for="">password</label>
+         
+       </div>
+      <input class="submit" type="submit" name="" value="LOGIN">
+    </div>
+    </div>
+    </form>
+  </body>
+    
+
+</html>
